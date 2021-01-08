@@ -1,5 +1,7 @@
+//Short Script for the delay of the text. This function will change the display style of "myDiv" from "none" to "Block" after a 5 second delay on load of the index page.
+
 var TimeOut;
-//Short Script for the delay of the text
+
 function myFunction() {
   TimeOut = setTimeout(showPage, 5000);
 }

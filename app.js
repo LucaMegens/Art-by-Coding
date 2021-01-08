@@ -1,9 +1,11 @@
+// THIS SCRIPT LOADS THE WEBFONT FROM GOOGLE AND LOADS THE WEBGL FROM PIXI.JS. HERE YOU CAN CHANGE THE BACKGROUND COLOUR
+
 import { Visual } from "./visual.js";
 
 class App {
   constructor() {
     this.setWebgl();
-
+// LOADS THE CHOSEN FONT FROM GOOGLE FONT LIBRARY
     WebFont.load({
       google: {
         families: ["Hind:700"],
@@ -19,6 +21,7 @@ class App {
     });
   }
 
+// SETTINGS OF THE WEBGL RENDERER AND BACKGROUND COLOUR
   setWebgl() {
     this.renderer = new PIXI.Renderer({
       width: document.body.clientWidth,
@@ -28,7 +31,7 @@ class App {
       resolution: window.devicePixelRatio > 1 ? 2 : 1,
       autoDensity: true,
       powerPreference: "high-performance",
-      backgroundColor: 2020200202020202020202500,
+      backgroundColor: 0x000000,
     });
     document.body.appendChild(this.renderer.view);
 

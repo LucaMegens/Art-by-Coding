@@ -1,5 +1,6 @@
-/* ---- reset ---- */
+/* ---- THIS CSS FILE CREATES THE STYLING FOR THE INDEX PAGE ---- */
 
+/* ---- RESETS AND ADDS BODY WIDE STYLING ---- */
 body {
   margin: 0px;
   padding: 0px;
@@ -8,7 +9,7 @@ body {
 }
 
 
-/* ---- particles.js container. Defines the size of the container ---- */
+/* ---- PARTICLES.JS CONTAINER. DEFINES THE SIZE OF THE CONTAINER AND CANVAS ---- */
 
 #particles-js {
   position: absolute;
@@ -19,7 +20,7 @@ body {
   background-repeat: repeat;
 }
 
-/* Animates the fade in for the link */
+/* ---- ANIMATES THE FADE IN FOR THE LINK ---- */
 
 .animate-bottom
 {
@@ -42,7 +43,7 @@ body {
   to{ bottom:0; opacity:1 }
 }
 
-/*Creates the styling for the link*/
+/* ---- CREATES THE STYLING FOR THE LINK ---- */
 a
 {
   font-size: 3em;
@@ -56,10 +57,10 @@ a
   text-decoration: none;
 }
 
-/*Creates the drop down effect when hovering the link*/
+/* ---- CREATES THE DROP DOWN EFFECT WHEN HOVERING OVER THE LINK ---- */
 a:hover{
   color: black;
   transition: 1000ms;
   transition-delay: 50ms;
-  text-shadow: 0 30px white,  0px 0px 2px  white, 0px 60px white, 0px 90px white, 0px 120px white, 0px 150px white;
+  text-shadow: 0px 0px 2px  white, 0 30px white, 0px 60px white, 0px 90px white, 0px 120px white, 0px 150px white;
 }

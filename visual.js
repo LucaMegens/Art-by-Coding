@@ -1,6 +1,9 @@
+// THIS SCRIPT SETS THE TEXT THAT WILL BE DISPLAYED ON THE CANVAS, IT ALSO ANIMATES/CALCULATES THE PARTICLES RETURN ANIMATION
+
 import { Text } from "./text.js";
 import { Particle } from "./particle.js";
 
+// THIS PART CREATES THE TEXTURE OF THE PARTICLES AND CREATES THE MOUSE RADIUS
 export class Visual {
   constructor() {
     this.text = new Text();
@@ -10,8 +13,6 @@ export class Visual {
     this.particles = [];
 
     this.mouse = {
-      x: 5,
-      y: 50,
       radius: 50,
     };
 
@@ -19,6 +20,7 @@ export class Visual {
     document.addEventListener("touchend", this.onTouchEnd.bind(this), false);
   }
 
+// HERE YOU CAN SET THE TEXT MESSAGE AND THE DENSITY OF THE PARTICLES
   show(stageWidth, stageHeight, stage) {
     if (this.container) {
       stage.removeChild(this.container);
@@ -45,6 +47,7 @@ export class Visual {
     }
   }
 
+// THIS IS THE MATHEMATICS ON THE RETURN AND COLLIDE ANIMATION OF THE PARTICLES
   animate() {
     for (let i = 0; i < this.particles.length; i++) {
       const item = this.particles[i];

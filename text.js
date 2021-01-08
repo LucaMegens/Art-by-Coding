@@ -1,14 +1,12 @@
+// THIS SCRIPT WILL SET THE FONT AS WELL AS THE FONT SIZE AND SETS THE POSITIONING OF THE TEXT
+
+// THIS PART CREATES A CANVAS WHERE THE PARTICLES WILL BE DRAWN ON
 export class Text {
   constructor() {
     this.canvas = document.createElement("canvas");
-    //this.canvas.style.position = "absolute";
-    //this.canvas.style.left = "0";
-    //this.canvas.style.top = "0";
-    //document.body.appendChild(this.canvas);
-
     this.ctx = this.canvas.getContext("2d");
   }
-
+// THIS PART SETS THE POSITIONING OF THE TEXT AS WELL AS THE FONT, SIZE AND OUTLINING OF THE TEXT
   setText(str, density, stageWidth, stageHeight) {
     this.canvas.width = stageWidth;
     this.canvas.height = stageHeight;
@@ -20,7 +18,7 @@ export class Text {
 
     this.ctx.clearRect(0, 0, stageWidth, stageHeight);
     this.ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
-    this.ctx.fillStyle = `rgba(0, 0, 0, 1)`;
+    this.ctx.fillStyle = `rgba(0, 0, 0,)`;
     this.ctx.textBaseline = `middle`;
     const fontPos = this.ctx.measureText(myText);
     this.ctx.fillText(
@@ -34,6 +32,7 @@ export class Text {
     return this.dotPos(density, stageWidth, stageHeight);
   }
 
+// THIS SETS THE PARTICLES IN THE CORRECT POSITIONING
   dotPos(density, stageWidth, stageHeight) {
     const imageData = this.ctx.getImageData(0, 0, stageWidth, stageHeight).data;
 
