@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="CSS/StyleIndex.css">
 </head>
 
-<body onload="myFunction()">
+<body onload="DelayLink()">
     
   <div id="player">
     <audio autoplay hidden>
@@ -19,7 +19,7 @@
 
     <!-- This part let's a link appear after 5 seconds, which takes you to the next page of the story -->
     <div style="display: none;" id="myDiv" class="animate-bottom" >
-      <a href="Step1.html" onclick="playAudio()">Let's go on a journey about life, death and what it means to live </a> 
+      <a href="step1.html" onclick="playAudio()">Let's go on a journey about life, death and what it means to live </a> 
       <audio id="playAudio" src="Audio/KindredSound.mp3"></audio>
     </div>
     <!--Calls the script for the 5 second delay-->

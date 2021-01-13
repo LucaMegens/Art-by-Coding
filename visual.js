@@ -26,7 +26,7 @@ export class Visual {
       stage.removeChild(this.container);
     }
 
-    this.pos = this.text.setText("Life is only a dream", 5, stageWidth, stageHeight);
+    this.pos = this.text.setText("Life is only a dream" , 5, stageWidth, stageHeight);
 
     this.container = new PIXI.ParticleContainer(this.pos.length, {
       vertices: false,

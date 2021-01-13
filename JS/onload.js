@@ -2,7 +2,7 @@
 
 var TimeOut;
 
-function myFunction() {
+function DelayLink() {
   TimeOut = setTimeout(showPage, 5000);
 }
 
