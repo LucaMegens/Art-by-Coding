@@ -1,25 +1,22 @@
-PIXI.utils.sayHello();
-
-var renderer = PIXI.autoDetectRenderer(512, 512, {
-    transparent: true,
-    resolution: 1,
+const canvas = document.getElementById('mycanvas');
+const app = new PIXI.Application({
+view: canvas,
+width: window.innerHeight,
+height: window.innerHeight,
+backgroundColor: 0xC0C0C0
 });
-document.getElementById('display').appendChild(renderer.view);
 
-var stage = new PIXI.Container();
+const texture = PIXI.Texture.from('images/Void_SubBadge1year.png');
+const img = new PIXI.Sprite(texture);
+img.x = app.renderer.width / 2;
+img.y = app.renderer.height / 2;
+img.anchor.x = 0.5;
+img.anchor.y = 0.5;
+app.stage.addChild(img);
 
-PIXI.loader
- .add("images/Emote.png")
- .load(setup);
+app.ticker.add(animate);
 
-var emote;
-
-function setup() {
-    emote = new PIXI.Sprite(
-    PIXI.loader.resources["images/Emote.png"].texture
-    );
-
-    stage.addChild(emote);
-    renderer.render(stage);
-    }
+function animate(){
+    img.rotation += 0.01;
+}
 
