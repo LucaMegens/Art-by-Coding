@@ -1,10 +1,35 @@
 body{
-    height: 90vh;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-color: darkgray;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-#display {
-    border: 1px dashed black;
+canvas{
+    width: 40%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+    padding-inline-start: 0px;
+    list-style-type: none;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a:hover{
+    opacity: 0.5;
 }

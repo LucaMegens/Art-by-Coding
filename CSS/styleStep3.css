@@ -1,0 +1,36 @@
+body{
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+    color: white;
+    font-size: 5em;
+}
+
+ul{
+    display: flex;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95vw;
+    left: 1%;
+    top: 2%;
+}
+  
+a{
+    text-decoration: none;
+    color: darkgray;
+    font-size: 3em;
+}
+  
+a:hover{
+    opacity: 0.5;
+}
