@@ -17,7 +17,7 @@ A piece of advice from me is to live like everyday is your last day, it could en
 
 ## Further development/Libraries
 
-In this project I use a bunch of libraries. The libraries I used are [particles.js] (https://github.com/VincentGarreau/particles.js) and [PixiJS](https://www.pixijs.com/)
+In this project I use a bunch of libraries. The libraries I used are [particles.js](https://github.com/VincentGarreau/particles.js) and [PixiJS](https://www.pixijs.com/)
 
 The idea was that users could explore this story about life and death however they wanted it to via abstract (interactive) motion graphics and kinetic typography , but to get to the next page the users have to search for hidden buttons.
 The main theme is white and black, yin and yang, life and death. But the further you go into a direction of the story the further you can explore the universe and nature.
