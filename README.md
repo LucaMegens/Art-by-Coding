@@ -15,6 +15,10 @@ If you can live your life to the fullest like this you might be able to do extra
 A piece of advice from me is to live like everyday is your last day, it could end in an instant, so make sure you don’t have any regrets.’’
 
 
+## Requirements
+The only thing you need to run this WebApp is Visual studio code with the live server plugin, or any other text editor and a localhost.
+
+
 ## Further development/Libraries
 
 In this project I use a bunch of libraries. The libraries I used are [particles.js](https://github.com/VincentGarreau/particles.js) and [PixiJS](https://www.pixijs.com/)
@@ -23,4 +27,13 @@ The idea was that users could explore this story about life and death however th
 The main theme is white and black, yin and yang, life and death. But the further you go into a direction of the story the further you can explore the universe and nature.
 For example, a user could stumble upon a hidden jungle with vast varieties of different species. These jungles and landscapes are not limited to earthly landscapes either.
 When the users are going through the story they will start to think about life and death more and more, while simultaneously learning about their own existence.
+
+
+## Used Code
+
+Step2.html uses PixiJS to animate and create the particles. I did not write this piece of code using PixiJS, I only modified some parameters so that the kinetic typography gets the look that I want.
+
+The original writer of this piece of code is Mooyeon-Choi. 
+
+[link to github](https://github.com/mooyeon-choi/kinetic-typography-2)
 
